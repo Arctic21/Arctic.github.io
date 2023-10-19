@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"> 
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<style>
+  body{
+  background-image:url("img/Dusty.jpeg");
+  background-repeat: none;
+  background-attachment: fixed;
+  overflow-x:hidden;
+}
+header{
+  border: 1px solid white; 
+  border-radius: 15px;
+  background-color: rgba(128, 128, 128, 80%);
+}
+
+li{
+  display:table-cell;
+  position:relative; 
+  padding: 5px 0;
+  right:0;
+  width:100%; 
+}
+a{
+  color:#fff; 
+  text-transform: uppercase;
+  text-decoration:none;
+  letter-spacing: 0.15em;
+  display: inline block;
+  padding: 10px 15px;
+  position:relative;
+}
+ul :hover {
+  text-decoration:underline;
+  left:0;
+  width:100%;
+}
+.main{
+  height:700px;
+  width:80%;
+  background-image: url("img/WhatsApp\ Image\ 2023-09-19\ at\ 15.56.21.jpg");
+  background-position: center right  ;
+  background-repeat: no-repeat;
+  padding: 0;
+  text-align: center;
+  margin-left: 150px;
+  margin-top:40px;
+  display:inline-block;
+  background-size: 80%;
+  border-radius: 15px;
+}
+h2,p{
+  color:white;
+}
+p{ 
+  font-size: large ;
+  padding:25px;
+  margin:auto; 
+
+}
+.bio{
+  width:40%;
+  background-color: rgba(128, 128, 128, 95%);
+  height:100%;
+  display:inline-block;
+  margin-left:0px;
+  margin-right:1000px;
+  display:inline-block; 
+  border-radius:15px;
+  border: 1px solid black;
+
+}
+.socials{
+  align-items: center;
+  display:flex; 
+  margin-top: 150px;
+  margin-bottom:100px;
+  margin-left: 100px;
+  margin-right:25px; 
+}
+.insta{
+  padding:50px; 
+}
+.insta img{
+  height:40px;
+  width:40px;
+}
+.linkedin {
+  border-width:15px;
+  width:20px;
+  padding:50px;
+  
+}
+.portfolio-link {
+  text-decoration: none;
+  padding:50px;
+  
+
+}
+.portfolio-link img {
+  width: 30px; 
+  height: 30px;
+  color:black;
+}
+.google-icon{
+  text-align:left; 
+  width:30px;
+  height:30px;
+  
+}
+.google-icon img{
+  height:30px;
+  width: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.img2{
+  width:40px;
+  height:40px;
+}
+
+</style>
+    <head>
+  <title>Portfolio</title>
+</head>
+<header>
+  <ul>
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+  </ul>
+</header>
+<body>
+<div class="main">
+
+  <div class="bio">
+    <h1> Hello, I am Megan.</h1>
+    <h2> Welcome to my portfolio.</h2>
+    <p>
+      In this portfolio you will find out about me as a journalism student as well as my portfolio that contains some of the work I have completed as part of my degree. To find my Motivational Letters, My CV and my Transcript you can click the About in the top right hand corner. To find any other additional work and Course work you can click on the portfolio. Thank you for taking my application into consideration! 
+    </p>
+
+<div class="socials">
+<div class="linkedin"> 
+    <a href="https://www.linkedin.com/in/megan-lee-moulang-070472247?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVu5GefFwQ5i%2BtKEf%2FJqmUA%3D%3D" target="_blank" class="portfolio-link">
+      <img src="img/linkedin.svg" alt="Portfolio Link">
+      </a>
+</div>
+
+<div class="Instagram">
+ <a href="https://instagram.com/meg._.lee?igshid=MzRlODBiNWFlZA==" class="insta">
+  <img src="img/instagram.png" alt="instagram link"> 
+ </a>
+</div>
+
+<div class="google-icon" id="google-icon">
+    <img src="img/mail.png" alt="Google Icon">
+</div>
+ 
+
+</div>
+<div id="email-address" class="hidden">
+    <p>Email: <a href="mailto:megsie.moulang@gmail.com">megsie.moulang@gmail.com</a></p>
+</div>
+
+<script>
+  const googleIcon = document.getElementById('google-icon');
+  const emailAddress = document.getElementById('email-address');
+
+  googleIcon.addEventListener('click', function() {
+      emailAddress.classList.toggle('hidden');
+  });
+</script>
+ </div>
+
+</div>
+</body>
+</html>
